@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTLite Navigator", "GTLite Navigator.csproj", "{DC08DC66-3D06-4558-8E47-616714E6107C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "del", "..\Users\User\Documents\Visual Studio 11\Projects\del\del.csproj", "{878190E3-266C-4B64-B39D-202E47825CBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|HPD = Debug|HPD
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|HPD = Release|HPD
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Debug|HPD.ActiveCfg = Debug|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Release|HPD.ActiveCfg = Release|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{878190E3-266C-4B64-B39D-202E47825CBB}.Release|x86.ActiveCfg = Release|Any CPU
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|HPD.ActiveCfg = Debug|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|HPD.Build.0 = Debug|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|Mixed Platforms.ActiveCfg = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|Mixed Platforms.Build.0 = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|x86.ActiveCfg = Debug|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Debug|x86.Build.0 = Debug|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Release|Any CPU.ActiveCfg = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Release|HPD.ActiveCfg = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Release|x86.ActiveCfg = Release|x86
+		{DC08DC66-3D06-4558-8E47-616714E6107C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

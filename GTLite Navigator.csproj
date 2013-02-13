@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC08DC66-3D06-4558-8E47-616714E6107C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTLite</RootNamespace>
+    <AssemblyName>GTLite Navigator</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1306328561_keyboard_layout.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GTLite.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>GTLite Navigator.exe.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudToolkitN6, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\CloudToolkitN6.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.7, Culture=neutral, PublicKeyToken=ff0069e61369d6d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenWebKitSharp, Version=2.6.1.2723, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenWebKitSharp\Binary NET2\OpenWebKitSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Qios.DevSuite.Components">
+      <HintPath>..\..\..\..\..\..\..\Program Files\QIOS\Qios.DevSuite.Components 3.0\Bin\Qios.DevSuite.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="WebKit.Interop, Version=536.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\OpenWebKitSharp\WebKit\WebKit.Interop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoFillManager.cs" />
+    <Compile Include="BlockedSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockedSites.Designer.cs">
+      <DependentUpon>BlockedSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page.Designer.cs">
+      <DependentUpon>Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupBlocked.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PopupBlocked.Designer.cs">
+      <DependentUpon>PopupBlocked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupExceptions.Designer.cs">
+      <DependentUpon>PopupExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renderer\GTLiteRender.cs" />
+    <Compile Include="Renderer\GTLiteToolStripRender.cs" />
+    <Compile Include="ResourceDownloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceDownloader.Designer.cs">
+      <DependentUpon>ResourceDownloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSSRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSSRead.designer.cs">
+      <DependentUpon>RSSRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavedPages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavedPages.Designer.cs">
+      <DependentUpon>SavedPages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.cs" />
+    <Compile Include="StartupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupForm.Designer.cs">
+      <DependentUpon>StartupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Textbox\AutocompleteItem.cs" />
+    <Compile Include="Textbox\AutocompleteMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bookmarking.cs" />
+    <Compile Include="Textbox\Char.cs" />
+    <Compile Include="Textbox\CommandManager.cs" />
+    <Compile Include="Textbox\Commands.cs" />
+    <Compile Include="Developer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Developer.Designer.cs">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Textbox\Export.cs" />
+    <Compile Include="Textbox\FastColoredTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Textbox\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Textbox\FindForm.designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="History.cs" />
+    <Compile Include="Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library.designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Textbox\LimitedStack.cs" />
+    <Compile Include="Textbox\Line.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Textbox\Place.cs" />
+    <Compile Include="Textbox\Range.cs" />
+    <Compile Include="Renderer\Ncrender.cs" />
+    <Compile Include="PageInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageInfo.Designer.cs">
+      <DependentUpon>PageInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QTabCloseButton.cs" />
+    <Compile Include="QTabControlEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QTabControlEx.Designer.cs">
+      <DependentUpon>QTabControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QTabStripPainterEx.cs" />
+    <Compile Include="Textbox\ReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Textbox\ReplaceForm.designer.cs">
+      <DependentUpon>ReplaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceViewer.Designer.cs">
+      <DependentUpon>SourceViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Textbox\Style.cs" />
+    <Compile Include="Textbox\SyntaxDescriptor.cs" />
+    <Compile Include="Textbox\SyntaxHighlighter.cs" />
+    <Compile Include="Textbox\VisualMarker.cs" />
+    <Compile Include="Textbox\win32.cs" />
+    <Compile Include="TextWithCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextWithCaption.designer.cs">
+      <DependentUpon>TextWithCaption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToVisitLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToVisitLink.Designer.cs">
+      <DependentUpon>ToVisitLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator.Designer.cs">
+      <DependentUpon>Translator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Developer.resx">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockedSites.resx">
+      <DependentUpon>BlockedSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginControl.resx">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page.resx">
+      <DependentUpon>Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup.resx">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupBlocked.resx">
+      <DependentUpon>PopupBlocked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupExceptions.resx">
+      <DependentUpon>PopupExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceDownloader.resx">
+      <DependentUpon>ResourceDownloader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSSRead.resx">
+      <DependentUpon>RSSRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SavedPages.resx">
+      <DependentUpon>SavedPages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupForm.resx">
+      <DependentUpon>StartupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textbox\FastColoredTextBox.resx">
+      <DependentUpon>FastColoredTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textbox\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageInfo.resx">
+      <DependentUpon>PageInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QTabControlEx.resx">
+      <DependentUpon>QTabControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textbox\ReplaceForm.resx">
+      <DependentUpon>ReplaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceViewer.resx">
+      <DependentUpon>SourceViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextWithCaption.resx">
+      <DependentUpon>TextWithCaption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToVisitLink.resx">
+      <DependentUpon>ToVisitLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translator.resx">
+      <DependentUpon>Translator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bin\bookmarks.data" />
+    <None Include="bin\GTLite Navigator\Properties\bookmarks.data" />
+    <None Include="bin\GTLite Navigator\Properties\history.data" />
+    <None Include="GTLite Navigator.exe.manifest" />
+    <None Include="Properties\DataSources\FavItem.datasource" />
+    <None Include="Properties\DataSources\HisItem.datasource" />
+    <None Include="Properties\DataSources\LoginItem.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\RSS_Reader.Feed.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\WebKit.DOM.Node.datasource" />
+    <None Include="Properties\DataSources\WebKit.DOM.NodeList.datasource" />
+    <None Include="Properties\DataSources\WebKit.WebKitResource.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseMask.png" />
+    <None Include="Resources\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1291449967_security-high.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1291732552_lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1306328561_keyboard_layout.ico" />
+    <None Include="bin\Release\GTLite Downloads\wave-background.jpg" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\Silence.ico" />
+    <None Include="Resources\Form.bmp" />
+    <None Include="Resources\Top.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
